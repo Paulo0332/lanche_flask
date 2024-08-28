@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu da Cantina</title>
+  <link rel="stylesheet" href="{{ url_for ('static', filename='styles.css' )}}"> </head>
+<body>
+  
+  <section id="cardapio">
+    <h1>Menu da Cantina</h1>
+    <h2>Nossos Lanches</h2>
+    <div class="Menu">
+      <ul>
+        <li>
+          <img src="https://img.cybercook.com.br/receitas/151/x-salada-3.jpeg" width="30%">
+          <h3>X-Salada</h3>
+          <p>Delicioso sanduíche com carne, alface, tomate e queijo.</p>
+          <a href="{{ url_for('detalhe1') }}">Ver mais</a>
+        </li>
+
+        <li>
+          <img src="https://s2-receitas.glbimg.com/3MhTZmEn-vxeIGovC29jalC2ctQ=/0x0:653x400/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2014/10/28/17_58_29_769_pastel_maria.jpg" alt="Pastel" width="30%">
+          <h3>Pastel</h3>
+          <p>Diversos sabores de pastel frito na hora.</p>
+          <a href="{{ url_for('detalhe2') }}">Ver mais</a>
+        </li>
+
+        <li>
+          <img src="https://groundbeefrecipes.com/wp-content/uploads/double-bacon-cheeseburger-recipe-6.jpg" alt="Cheeseburger" width="30%">
+          <h3>Cheeseburger</h3>
+          <p>Clássico hambúrguer com queijo cheddar e acompanhamentos.</p>
+          <a href="{{ url_for('detalhe3') }}">Ver mais</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
